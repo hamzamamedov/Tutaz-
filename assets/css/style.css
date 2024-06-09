@@ -8,11 +8,50 @@
   transition: all 0.17s ease-in;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.to-top {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  right: 20px;
+  bottom: 50px;
+}
+
+.to-top span {
+  background-color: #d4d6d6;
+  color: #fff;
+  height: 55px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.to-top p {
+  color: #bdc0c0;
+  font-size: 13px;
+}
+
+.to-top:hover span {
+  background-color: #df1976;
+}
+.to-top:hover p {
+  color: #df1976;
 }
 
 .topside {
