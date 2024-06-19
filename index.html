@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="icon" href="https://tut.az/files/extensions/tutuz_t10cd9e/9528d16399c680.png" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link
+      rel="icon"
+      href="https://tut.az/files/extensions/tutuz_t10cd9e/9528d16399c680.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -19,6 +26,7 @@
       <span><i class="fa-solid fa-arrow-up"></i></span>
       <p>Yuxarı</p>
     </a>
+    <div class="allscreen"></div>
     <header>
       <div class="topbar">
         <div class="topside">
@@ -224,8 +232,8 @@
               <a href="#">Hamısıni göstər</a>
             </div>
             <div class="vip-cards-container">
-              <div class="vip-card">
-                <a href="" class="link"></a>
+              <div class="vip-card" >
+                <a href="#" class="link" onclick="bax()" target="_top"></a>
                 <div class="image1">
                   <img src="assets/images/vip.webp" alt="" />
                 </div>
@@ -1508,7 +1516,7 @@
           </div>
           <div class="footer-bottom">
             <div class="bottom-left">
-              <p style="margin-bottom: 45px; font-size: 14px;">
+              <p style="margin-bottom: 45px; font-size: 14px">
                 Saytın rəhbərliyi reklam bannerlərinin və yerləşdirilmiş<br />
                 elanların məzmununa görə məsuliyyət daşımır.
               </p>
@@ -1536,9 +1544,7 @@
               </p>
             </div>
             <div class="bottom-right">
-              <p class="for-contact">
-                Əlaqə üçün:
-              </p>
+              <p class="for-contact">Əlaqə üçün:</p>
               <ul>
                 <li><a href="tel:+994125258308">Tel: (012) 525-83-08</a></li>
                 <li><a href="tel:+994702061001">Mob: (070) 206-10-01</a></li>
@@ -1549,5 +1555,27 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal2" id="modal2">
+      <div class="modal-top">
+        <h4>VIP elan</h4>
+        <button type="button" id="close">x</button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Bu xidmətdən istifadə edərək, elanınızı saytın "VIP" <br />
+          bölməsində yerləşdirə bilərsiniz.
+        </p>
+        <b>Sizin elanınızın nömrəsi</b>
+        <div class="flex">
+          <input type="text" name="product-id" id="product-id" />
+          <button type="button">
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/javascript/main.js"></script>
   </body>
 </html>

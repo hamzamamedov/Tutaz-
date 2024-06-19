@@ -541,12 +541,110 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
- }
-.for-contact{
+}
+.for-contact {
   font-size: 16px;
   font-weight: 600;
 }
 
-.for-contact+ul li a{
+.for-contact + ul li a {
   font-size: 14px;
+}
+
+/* modal.............. */
+
+.modal2 {
+  width: 27%;
+  position: fixed;
+  background-color: white;
+  border-radius: 2px 2px 7px 7px;
+  overflow: hidden;
+  top: -195px;
+  left: 31.5%;
+  transition: all .3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  z-index: 99999999;
+  opacity: 0;
+ }
+
+.view{
+  top: 75px;
+  opacity: 1;
+}
+
+
+ .modal-top {
+  background-color: #df1976;
+  text-align: center;
+  line-height: 35px;
+  padding: 5px 0;
+  color: #fff;
+}
+
+.modal-top h4 {
+  font-size: 20px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.modal-top button {
+  position: absolute;
+  top: 4%;
+  border: none;
+  outline: none;
+  background-color: #df1976;
+  font-size: 25px;
+  font-weight: bold;
+  right: 15px;
+  cursor: pointer;
+  font-family: cursive;
+  color: #fff;
+}
+
+.modal-body {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.modal-body p {
+  font-size: 16px;
+  color: black;
+  margin: 12px 0 10px 0;
+}
+
+.modal-body .flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 17px 0 17px 0;
+}
+
+.modal-body .flex input {
+  border: 1px solid black;
+  width: 55%;
+  border-right: none;
+  height: 33px;
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+.modal-body .flex button {
+  width: 10%;
+  cursor: pointer;
+}
+
+.modal-body .flex button i {
+  color: #df1976;
+}
+
+
+
+/* ...... */
+
+.allscreen1{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.712);
+  z-index: 5000000;
+  transition: all .3s;
 }
