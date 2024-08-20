@@ -10,3 +10,11 @@ bagla.addEventListener("click", () => {
   modal2.classList.remove("view");
   allscreen.classList.remove("allscreen1");
 });
+
+window.onclick=function(e){
+  if(e.target==allscreen){
+    modal2.classList.remove("view");
+    allscreen.classList.remove("allscreen1");
+
+  }
+}
